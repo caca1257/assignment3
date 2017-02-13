@@ -1,5 +1,4 @@
 
-
 function setup() {
   createCanvas(800, 400);
 }
@@ -20,12 +19,13 @@ function draw() {
 
   if(allSprites.length === 50){
     var frame = background(random(255),random(255),random(255));
+
     text("YOU WON!", width/2, height/2);
   }
   else if(allSprites.length > 50){
     var frame = background(0);
     fill(255);
-    text("YOU LOST", width/2,height/2);
+    text("GAME OVER", width/2,height/2);
   }
   
 
